@@ -1,0 +1,26 @@
+{
+    "random":[
+        ["Essentially, that work examines how a word gains new senses, and how some senses of a word may become deprecated.", "here we examine how different words compete to represent the same meaning, and how the degree of success of words in that competition changes over time.", "contrasting"],
+        ["Literature on the topic of the current study spans across many areas, including verb classification, semiotics, sign language and learning.", "abstract words can be more challenging to learn and memorise.", "neutral"],
+        ["The Lang-8 corpus has often only one corrected sentence per learner sentence, which is not enough for evaluation.", "we ensured that our evaluation corpus has multiple references.", "reasoning"],
+        ["As a complementary area of investigation, a plausible direction would be to shift the focus from the decomposition of words into morphemes, to the organization of words as complete paradigms.", "instead of relying on sub-word units, identify sets of words organized into morphological paradigms (Blevins, 2016).”", "entailment"]
+    ],
+    "human":[
+        ["Literature on the topic of the current study spans across many areas, including verb classification, semiotics, sign language and learning.", "abstract words can be more challenging to learn and memorise.", "neutral"],
+        ["The Lang-8 corpus has often only one corrected sentence per learner sentence, which is not enough for evaluation.", "we ensured that our evaluation corpus has multiple references.", "reasoning"],
+        ["Essentially, that work examines how a word gains new senses, and how some senses of a word may become deprecated.", "here we examine how different words compete to represent the same meaning, and how the degree of success of words in that competition changes over time.", "contrasting"],
+        ["As a complementary area of investigation, a plausible direction would be to shift the focus from the decomposition of words into morphemes, to the organization of words as complete paradigms.", "instead of relying on sub-word units, identify sets of words organized into morphological paradigms (Blevins, 2016).”", "entailment"]
+    ],
+    "mixtral":[
+        ["Essentially, that work examines how a word gains new senses, and how some senses of a word may become deprecated.", "here we examine how different words compete to represent the same meaning, and how the degree of success of words in that competition changes over time.", "contrasting"],
+        ["The Lang-8 corpus has often only one corrected sentence per learner sentence, which is not enough for evaluation.", "we ensured that our evaluation corpus has multiple references.", "reasoning"],
+        ["As a complementary area of investigation, a plausible direction would be to shift the focus from the decomposition of words into morphemes, to the organization of words as complete paradigms.", "instead of relying on sub-word units, identify sets of words organized into morphological paradigms (Blevins, 2016).”", "entailment"],
+        ["Literature on the topic of the current study spans across many areas, including verb classification, semiotics, sign language and learning.", "abstract words can be more challenging to learn and memorise.", "neutral"]
+    ],
+    "llama":[
+        ["Literature on the topic of the current study spans across many areas, including verb classification, semiotics, sign language and learning.", "abstract words can be more challenging to learn and memorise.", "neutral"],
+        ["The Lang-8 corpus has often only one corrected sentence per learner sentence, which is not enough for evaluation.", "we ensured that our evaluation corpus has multiple references.", "reasoning"],
+        ["Essentially, that work examines how a word gains new senses, and how some senses of a word may become deprecated.", "here we examine how different words compete to represent the same meaning, and how the degree of success of words in that competition changes over time.", "contrasting"],
+        ["As a complementary area of investigation, a plausible direction would be to shift the focus from the decomposition of words into morphemes, to the organization of words as complete paradigms.", "instead of relying on sub-word units, identify sets of words organized into morphological paradigms (Blevins, 2016).”", "entailment"]
+    ]
+}

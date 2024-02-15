@@ -1,0 +1,8 @@
+Category,Precision,Recall,F1 Score
+Method,0.4086,0.3576,0.3814
+Task,0.2095,0.3702,0.2676
+Metric,0.1667,0.3662,0.2291
+Material,0.1481,0.0253,0.0432
+OtherScientificTerm,0.2786,0.5087,0.36
+Generic,0.0961,0.1333,0.1117
+all,0.2501,0.3431,0.2893

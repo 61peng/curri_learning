@@ -1,0 +1,23 @@
+{
+    "random":[
+        ["This is clearly in contrast to the results of earlier investigations ( Laprise & Peltier 1989a , Pierre - humbert & Wyman 1985 , Clark & Peltier 1977 ) , where it was found that the criteria for static and dynamic instabilities are simultaneously satisfied .", "result"],
+        ["To determine the cell velocity, Darcy\u2019s law may be used as the constitutive assumption [21], [18], [22], [13]: u = \u2212\u03bc\u2207P (5)", "method"],
+        ["We employed three modelling approaches that have successfully been applied in previous studies on species distribution (Guisan and Zimmermann 2000): generalised linear models (GLM, i.e. logistic regression in this case), generalised additive models (GAM), and classification and regression trees\u201a\u00c4\u00b6", "method"],
+        ["\u2026nest burrows in close proximity of one another appears to be well founded as previously shown by several studies that measured distances between kin vs. non-kin nest burrows, including in long-term data sets (King 1989b; Viblanc et al. 2010; Arnaud, Dobson & Murie 2012; Dobson et al. 2012).", "background"],
+        ["This result is consistent with the conclusions of the aforementioned recent study of (34) and reinforces them from a significantly broader perspective.", "result"]
+    ],
+    "human":[
+        ["This result is consistent with the conclusions of the aforementioned recent study of (34) and reinforces them from a significantly broader perspective.", "result"],
+        ["To determine the cell velocity, Darcy\u2019s law may be used as the constitutive assumption [21], [18], [22], [13]: u = \u2212\u03bc\u2207P (5)", "method"],
+        ["This is clearly in contrast to the results of earlier investigations ( Laprise & Peltier 1989a , Pierre - humbert & Wyman 1985 , Clark & Peltier 1977 ) , where it was found that the criteria for static and dynamic instabilities are simultaneously satisfied .", "result"],
+        ["\u2026nest burrows in close proximity of one another appears to be well founded as previously shown by several studies that measured distances between kin vs. non-kin nest burrows, including in long-term data sets (King 1989b; Viblanc et al. 2010; Arnaud, Dobson & Murie 2012; Dobson et al. 2012).", "background"],
+        ["We employed three modelling approaches that have successfully been applied in previous studies on species distribution (Guisan and Zimmermann 2000): generalised linear models (GLM, i.e. logistic regression in this case), generalised additive models (GAM), and classification and regression trees\u201a\u00c4\u00b6", "method"]
+    ],
+    "mixtral":[
+        ["We employed three modelling approaches that have successfully been applied in previous studies on species distribution (Guisan and Zimmermann 2000): generalised linear models (GLM, i.e. logistic regression in this case), generalised additive models (GAM), and classification and regression trees\u201a\u00c4\u00b6", "method"],
+        ["To determine the cell velocity, Darcy\u2019s law may be used as the constitutive assumption [21], [18], [22], [13]: u = \u2212\u03bc\u2207P (5)", "method"],
+        ["This result is consistent with the conclusions of the aforementioned recent study of (34) and reinforces them from a significantly broader perspective.", "result"],
+        ["\u2026nest burrows in close proximity of one another appears to be well founded as previously shown by several studies that measured distances between kin vs. non-kin nest burrows, including in long-term data sets (King 1989b; Viblanc et al. 2010; Arnaud, Dobson & Murie 2012; Dobson et al. 2012).", "background"],
+        ["This is clearly in contrast to the results of earlier investigations ( Laprise & Peltier 1989a , Pierre - humbert & Wyman 1985 , Clark & Peltier 1977 ) , where it was found that the criteria for static and dynamic instabilities are simultaneously satisfied .", "result"]
+    ]
+}
