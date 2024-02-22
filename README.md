@@ -33,12 +33,12 @@ The ICCL effective model is marked by "†".
 |SciNLI| Llama 2-13B      | 21.58           | 19.12     |  -          |
 | SciNLI | Llama 2-70B† | 30.05           | 35.67     |   35.67         |
 |SciNLI| Mixtral-8x7B†   | 43.18           | 51.56     |  46.04          |
-|SciNLI| Qwen-72B-Chat†        | 51.54           | 51.17     |   -         |
+|SciNLI| Qwen-72B-Chat        | 51.54           | 51.17     |   -         |
 |SciNLI| GPT-4       | 55.92           | 55.17     |   -         |
 |SciERC| Llama 2-13B†      | 31.58           | 33.26     |  -          |
 | SciERC  | Llama 2-70B† | 31.39           | 32.94    |   29.12         |
 |SciERC| Mixtral-8x7B†   | 32.95           | 33.41     |   32.22         |
-|SciERC| Qwen-72B-Chat        | 29.84           | 30.63     |   -         |
+|SciERC| Qwen-72B-Chat†        | 29.84           | 30.63     |   -         |
 |SciERC| GPT-4       | 38.34           | 36.58     |   -         |
 
 
