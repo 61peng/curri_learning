@@ -1,0 +1,10 @@
+fire==0.5.0
+matplotlib==3.7.1
+modelscope==1.10.0
+nltk==3.8.1
+numpy==1.23.5
+peft==0.5.0
+scikit_learn==1.2.2
+torch==2.0.1
+tqdm==4.64.1
+transformers==4.36.1
