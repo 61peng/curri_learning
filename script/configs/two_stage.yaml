@@ -1,0 +1,32 @@
+hydra:
+  job:
+    chdir: false
+batch_size: 1
+model_name: "model/Qwen1.5-72B-Chat"  # Llama-2-70b-chat-hf/Mixtral-8x7B-Instruct-v0.1
+rand_seed: 1
+task_name: scicite
+prerank_method: topk  # topk, votek
+coverage: false
+rerank_method: random  # length/random/similarity/ppl_all/ppl_label
+output_file: output/pred_data/${task_name}/mixtral/${prerank_method}+${rerank_method}_seed${rand_seed}_bs${batch_size}.json  # llama2-70b/mixtral
+sample_num: 5
+max_new_token: 256
+window: 10
+span: true
+n_tokens: 700
+instruction_template: 1
+overwrite: true
+calibrate: false
+reverse_label: false
+prior_no: 1
+dataset_reader:
+  _target_: src.dataset_readers.ppl_inference_cls_dsr.PPLCLSInferenceDatasetReader
+  dataset_path: output/retrived_data/${task_name}/retrieved_${prerank_method}.json
+  task_name: ${task_name}
+  model_name: ${model_name}
+  index_split: "train"
+  n_tokens: 700
+  index_data_path: null
+model:
+  _target_: transformers.AutoModelForCausalLM.from_pretrained
+  pretrained_model_name_or_path: ${model_name}

@@ -1,0 +1,17 @@
+fire==0.5.0
+hydra-core==1.3.2
+matplotlib==3.7.1
+modelscope==1.10.0
+nltk==3.8.1
+numpy==1.23.5
+peft==0.5.0
+scikit_learn==1.2.2
+torch==2.2.2
+tqdm==4.64.1
+transformers==4.39.3
+sentence_transformers==2.7.0
+hydra-core==1.3.2
+datasets==2.19.1
+accelerate==0.30.1
+dppy== 0.3.2
+spacy==3.7.4

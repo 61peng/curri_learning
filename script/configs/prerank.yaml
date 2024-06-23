@@ -1,0 +1,37 @@
+hydra:
+  job:
+    chdir: false
+rand_seed: 1
+num_candidates: 30
+num_ice: 8
+dpp_sampling: false
+dpp_topk: 100
+scale_factor: null
+rerank: false
+batch_size: 64
+cuda_device: cuda
+overwrite: true
+method: 'votek'  # topk, votek
+vote_k_k: 1
+model_name: 'gpt2-xl'
+retriever_model: 'model/all-mpnet-base-v2'
+task_name: scierc
+output_file: output/retrived_data/${task_name}/retrieved_${method}.json
+index_file: output/retrived_data/${task_name}/index_${method} 
+emb_field: X  # ALL for scinli, X for scierc & scicite
+dataset_reader:
+  task_name: ${task_name}
+  model_name: ${model_name}
+  field: ${emb_field}
+  dataset_split: test
+  dataset_path: null
+
+index_reader:
+  task_name: ${task_name}
+  model_name: ${model_name}
+  field: ${emb_field}
+  dataset_split: train
+  dataset_path: null
+model:
+  _target_: transformers.AutoModelForCausalLM.from_pretrained
+  pretrained_model_name_or_path: ${model_name}
