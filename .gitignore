@@ -9,6 +9,7 @@ build
 test.py
 figure/*
 data/*
+outputs/*
 invalid_data/
 pred_data/*
 retrieved_data/*

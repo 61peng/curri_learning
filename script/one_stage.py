@@ -1,5 +1,5 @@
 import os
-# os.environ["CUDA_VISIBLE_DEVICES"] = "2"
+os.environ["CUDA_VISIBLE_DEVICES"] = "3"
 import sys
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), os.path.pardir)))
 import glob
@@ -15,11 +15,15 @@ from torch.utils.data import DataLoader
 from src.metrics import eval_datasets
 import hydra
 import hydra.utils as hu
+import itertools
 from src.utils.cache_util import BufferedJsonWriter, BufferedJsonReader
 from src.utils.prompt import get_templet, add_demonstrations
-from util import get_sequence
+# from util import get_sequence
 logger = logging.getLogger(__name__)
 
+def get_sequence(word_list):
+    sequence = ''.join([word if word.startswith((',', '.', ':', ';', '!', '?', '%')) else ' ' + word for word in word_list]).strip()
+    return sequence
 
 class Inferencer:
     def __init__(self, cfg, accelerator) -> None:
@@ -55,21 +59,21 @@ class Inferencer:
             model = LlamaForCausalLM.from_pretrained(
                 cfg.model_name, 
                 torch_dtype=torch.float16,
-                max_memory={0: "80GiB", 1: "80GiB", 2: "80GiB", 3: "80GiB"}, 
+                max_memory={0: "80GiB"}, 
                 quantization_config=bnb_config,
                 device_map='auto'
                 ).eval()
 
-        elif 'Mixtral' in cfg.model_name or "Qwen" in cfg.model_name:
+        else:
             model = AutoModelForCausalLM.from_pretrained(
                 cfg.model_name, 
                 torch_dtype=torch.float16, 
-                max_memory={0: "80GiB", 1: "80GiB", 2: "80GiB", 3: "80GiB"}, 
+                max_memory={0: "80GiB", 1: "80GiB"}, 
                 device_map='auto'
                 ).eval()
 
-        else:
-            model = hu.instantiate(cfg.model).eval()
+        # else:
+        #     model = hu.instantiate(cfg.model).eval()
         
         model = self.accelerator.prepare(model)
         if hasattr(model, "module"):
@@ -138,14 +142,6 @@ class Inferencer:
 
         with open(self.output_file, "w") as f:
             json.dump(data, f)
-
-        # data, metric = eval_datasets.app[self.task_name](self.output_file)
-        # logger.info(f"metric: {str(metric)}")
-        # with open(self.output_file + '_metric', "w") as f:
-        #     logger.info(f'{self.output_file}:{metric}')
-        #     json.dump({'metric': metric}, f)
-        # with open(self.output_file, "w") as f:
-        #     json.dump(data, f)
 
         return data
 
